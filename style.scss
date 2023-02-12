@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+}
+
+.welcome {
+  padding-top: 218px;
+  background-image: url(../img/back-welcome.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1024px;
+  h1 {
+    max-width: 750px;
+    margin-bottom: 32px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    align-items: center;
+    color: #ffffff;
+  }
+  p {
+    max-width: 481px;
+    margin-bottom: 44px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    align-items: center;
+    color: #ffffff;
+    .bolt {
+      font-weight: 700;
+    }
+  }
+  .butLetsGo {
+    width: 234px;
+    height: 48px;
+    background: #9c0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    color: #ffffff;
+    transition: all 0.3s;
+  }
+  .butLetsGo:hover {
+    transform: scale(1.05);
+  }
+}
+
+.games {
+  background: #000915;
+  padding: 128px;
+  display: flex;
+  gap: 32px;
+  .game {
+    width: 380px;
+    height: 300px;
+    border-radius: 16px;
+    transition: all 0.4s;
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      align-items: center;
+      color: #ffffff;
+      padding-top: 236px;
+      padding-left: 32px;
+    }
+  }
+  .game:hover {
+    transform: scale(1.05);
+  }
+  .gameOne {
+    background-image: url(../img/games-game1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .gameTwo {
+    background-image: url(../img/games-game2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .gameThree {
+    background-image: url(../img/games-game3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.firstGame {
+  background: #000915;
+  display: flex;
+  gap: 135px;
+  padding-top: 234px;
+  padding-bottom: 234px;
+  .firstGame-about {
+    max-width: 584px;
+    margin-top: 48px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    .butLetsGo {
+      width: 234px;
+      height: 48px;
+      background: #9c0332;
+      border-radius: 30px;
+      border-color: #000915;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      align-items: center;
+      color: #ffffff;
+      transition: all 0.3s;
+    }
+    .butLetsGo:hover {
+      transform: scale(1.05);
+    }
+  }
+  .firstGame-image {
+    display: inline-block;
+    img {
+      max-width: 486px;
+    }
+  }
+}
+
+// для планшета
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 786px / 2);
+    padding-right: calc(50% - 786px / 2);
+  }
+}
+
+//
+
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+// для мобильного
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .welcome {
+    padding-top: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 735px;
+    h1 {
+      align-items: center;
+      font-size: 32px;
+      line-height: 39px;
+      text-align: center;
+      color: #ffffff;
+    }
+    p {
+      width: 343px;
+      align-items: center;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .games {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .game {
+      width: 344px;
+    }
+  }
+  .firstGame {
+    padding-top: 50px;
+    padding-bottom: 86px;
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    text-align: center;
+    .firstGame-about {
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+    .firstGame-image {
+      img {
+        width: 344px;
+      }
+    }
+  }
+}
