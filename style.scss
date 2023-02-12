@@ -161,6 +161,61 @@ body {
   }
 }
 
+.secondGame {
+  background: #000915;
+  display: flex;
+  gap: 135px;
+  padding-top: 240px;
+  padding-bottom: 240px;
+  .secondGame-about {
+    max-width: 584px;
+    margin-top: 42px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    .butLetsGo {
+      width: 234px;
+      height: 48px;
+      background: #9c0332;
+      border-radius: 30px;
+      border-color: #000915;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      align-items: center;
+      color: #ffffff;
+      transition: all 0.3s;
+    }
+    .butLetsGo:hover {
+      transform: scale(1.05);
+    }
+  }
+  .secondGame-image {
+    display: inline-block;
+    img {
+      max-width: 480px;
+    }
+  }
+}
+
 // для планшета
 
 @media (max-width: 1024px) {
@@ -224,6 +279,7 @@ body {
     display: flex;
     gap: 64px;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     .firstGame-about {
       h2 {
@@ -239,6 +295,33 @@ body {
       }
     }
     .firstGame-image {
+      img {
+        width: 344px;
+      }
+    }
+  }
+  .secondGame {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .secondGame-about {
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+    .secondGame-image {
       img {
         width: 344px;
       }
