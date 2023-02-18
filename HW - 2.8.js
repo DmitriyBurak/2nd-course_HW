@@ -116,25 +116,25 @@
 
 // task 5
 
-function calling() {
-    console.log('Звоню!')
-};
+// function calling() {
+//     console.log('Звоню!')
+// };
 
-function beeps() {
-    let brEak = setTimeout(() => {
-        console.log('Идут гудки...')
-    }, 1000);
-    clearTimeout(brEak)
-    console.log('Идут гудки...');
-}
+// function beeps() {
+//     let brEak = setTimeout(() => {
+//         console.log('Идут гудки...')
+//     }, 1000);
+//     clearTimeout(brEak)
+//     console.log('Идут гудки...');
+// }
 
-function talk() {
-    console.log('Разговор')
-}
+// function talk() {
+//     console.log('Разговор')
+// }
 
-calling();
-beeps();
-talk();
+// calling();
+// beeps();
+// talk();
 
 
 // не уверен, что данное решение является правильным, скорее некий читинг, потмоу что не совсем понимаю идею задания, зачем отсрочить действие и убрать эту же отсрочку
