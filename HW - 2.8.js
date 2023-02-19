@@ -4,42 +4,6 @@
 
 // let arrNums = [3, 4, 1, 9, 10, 4];
 
-// function getResult(callback){
-//     callback();
-// }
-
-// function sum(arr) {
-//     res = 0;
-//     for (var i = 0; i < arr.length; ++i) {
-//         res += arr[i];
-//     }
-//     console.log(res);
-// } 
-
-// function mult(arr) {
-//     res2 = 1;
-//     for (var i = 0; i < arr.length; ++i) {
-//         res2 *= arr[i];
-//     }
-//     console.log(res2);
-// } 
-
-// getResult (
-//     function() {
-//         sum(arrNums)        
-//     }
-// )
-
-// getResult (
-//     function() {
-//         mult(arrNums)        
-//     }
-// )
-
-// !!!   вызов не такой, так в условии задачи, прощу подсказать иные способы решения 
-
-// let arrNums = [3, 4, 1, 9, 10, 4];
-
 // function getResult(arr, callback){
 //     return callback(arr);
 // }
@@ -82,50 +46,8 @@
 // getSortedArrayObj(users)
 
 
-// можно ли передать как второй парамерт свойство age?
-
 // task 3
  
-// let arrOne = [1, '4', 9, 'two'];
-// let arrTwo = [1, '4', false, 9, 'two'];
-
-// function each(callback){
-//     callback();
-// }
-
-// function reverseArr(arr) {
-//     arr = arr.reverse()
-//     console.log(arr);
-// } 
-
-
-
-// let arrr = []
-
-// function toNumberArr(arr) {
-//     for (i = 0; i < arr.length; i++){
-//         if (arr[i] === false){
-//             arr[i] = 0 
-//         }
-//         if (arr[i] === true){
-//             arr[i] = 1}
-//         if (!isNaN(arr[i])){
-//             arrr.push(arr[i])
-//         }
-//     }
-//     console.log(arrr);
-// } 
-
-// each( function () {
-//     reverseArr(arrOne)
-// })
-
-// each( function () {
-//     toNumberArr(arrTwo)
-// })
-
-//  /// ///// 
-
 // let arrOne = [1, '4', 9, 'two'];
 // let arrTwo = [1, '4', false, 9, 'two'];
 
@@ -136,7 +58,6 @@
 // function reverseArr(arr) {
 //     return arr.reverse();
 // } 
-
 
 // function toNumberArr(arr) {
 //     const arrr = [];
@@ -173,12 +94,11 @@
 //     console.log('Звоню!')
 // };
 
-// function beeps() {
-//     let brEak = setTimeout(() => {
+// function beeps(callback) {
+//     setTimeout(() => {
 //         console.log('Идут гудки...')
+//         callback()
 //     }, 1000);
-//     clearTimeout(brEak)
-//     console.log('Идут гудки...');
 // }
 
 // function talk() {
@@ -186,30 +106,4 @@
 // }
 
 // calling();
-// beeps();
-// talk();
-
-///////
-
-function calling() {
-    console.log('Звоню!')
-};
-
-function beeps(callback) {
-    setTimeout(() => {
-        console.log('Идут гудки...')
-        callback()
-    }, 1000);
-}
-
-function talk() {
-    console.log('Разговор')
-}
-
-calling();
-beeps(talk);
-// talk();
-
-
-// не уверен, что данное решение является правильным, скорее некий читинг, потмоу что не совсем понимаю идею задания, зачем отсрочить действие и убрать эту же отсрочку
-
+// beeps(talk);
